@@ -1,0 +1,258 @@
+:root {
+    --primary-color: #254d77;
+    --secondary-color: #ffb676;
+    --tertiary-color: #333;
+    --text-color-dark: #333;
+    --text-color-light: #f4f4f4;
+    --background-color: #f4f4f4;
+    --border-color: #ccc;
+    --border-radius: 10px;
+    --transition: 0.3s;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --primary-font: "Kanit", sans-serif;
+    --secondary-font: "Outfit", sans-serif;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-style: normal;
+}
+
+p, a, figcaption {
+    font-family: var(--secondary-font);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #e9ecef;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color-light);
+}
+
+.accentText {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+header nav {
+    background-color: var(--tertiary-color);
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0.7rem 0;
+}
+
+header ul li {
+    padding: 0.5rem 1.5rem;
+}
+
+header ul li a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+}
+
+header ul li a:hover {
+    color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.cardTitle {
+    font-size: 1.3rem;
+    padding: 0.9rem;  
+    width: 100%;
+    color: var(--text-color-light);
+    background-color: var(--primary-color);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.cardContent {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#aboutMeContent {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.5rem;
+}
+
+#introduction {
+    padding-bottom: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+#profilePicture {
+    width: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    align-self: flex-start;
+}
+
+#locationContent {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+#locationContent h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#locationContent div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#locationContent p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+figure {
+    text-align: center;
+}
+
+#countryFlag {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--tertiary-color);
+}
+
+.cardContent ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardContent ul li {
+    margin: 0.5rem 0;
+}
+
+.cardContent ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.cardContent ul li a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #aboutMeContent {
+        grid-template-columns: 1fr;
+    }
+    
+    #profilePicture {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    #locationContent div {
+        grid-template-columns: 1fr;
+    }
+}
