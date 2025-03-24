@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/place.css" />
+    <link rel="stylesheet" href="/styles/place-large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Venezuela</h1>
+    </header>
+    <main>
+      <picture class="hero-image">
+        <source
+          media="(max-width: 480px)"
+          srcset="/images/place/banner-portrail.webp"
+        />
+        <source
+          media="(min-width: 481px)"
+          srcset="/images/place/banner-landscape.webp"
+        />
+        <img src="/images/place/banner-portrail.jpg" alt="Roraima Tepui" />
+      </picture>
+      <div class="card">
+        <h2>Data</h2>
+        <dl>
+          <dt>Area:</dt>
+          <dd>916,445 km²</dd>
+          <dt>Population:</dt>
+          <dd>28,435,940</dd>
+          <dt>Capital:</dt>
+          <dd>Caracas</dd>
+          <dt>Languages:</dt>
+          <dd>Spanish</dd>
+          <dt>Currency:</dt>
+          <dd>Bolívar</dd>
+          <dt>Time Zone:</dt>
+          <dd>UTC-4</dd>
+          <dt>Calling Code:</dt>
+          <dd>+58</dd>
+          <dt>Internet TLD:</dt>
+          <dd>.ve</dd>
+        </dl>
+      </div>
+      <div class="card">
+        <h2>Weather</h2>
+        <img src="/images/place/weather-icon-cloudy.svg" alt="Partly Cloudy" />
+        <dl>
+          <dt>Temperature:</dt>
+          <dd id="temperature"></dd>
+          <dt>Conditions:</dt>
+          <dd id="conditions"></dd>
+          <dt>Humidity:</dt>
+          <dd id="humidity"></dd>
+          <dt>Wind:</dt>
+          <dd id="windSpeed"></dd>
+          <dt>Wind Chill</dt>
+          <dd id="windChill"></dd>
+        </dl>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> Jose Daniel Leonett |
+        Venezuela-Argentina
+      </p>
+      <p class="accentText">
+        Last Modification: <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>

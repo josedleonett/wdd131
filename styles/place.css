@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #1b5695;
+    --secondary-color: #ebc43a;
+    --tertiary-color: #e43c3c;
+    --text-color-dark: #333;
+    --text-color-light: #f2f2f2;
+    --background-color: #f4f4f4;
+    --border-color: #ccc;
+    --border-radius: 10px;
+    --transition: 0.3s;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --primary-font: "Kanit", sans-serif;
+    --secondary-font: "Outfit", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, dt {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-style: normal;
+}
+
+p, a, figcaption, dd {
+    font-family: var(--secondary-font);
+    font-size: medium;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--background-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    position: relative;
+    flex-grow: 1;
+}
+
+/* Mobile first styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top: 1rem solid var(--secondary-color);
+    border-bottom: 1rem solid var(--tertiary-color);
+}
+
+.card {
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+    box-shadow: var(--box-shadow);
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+.card h2 {
+    color: var(--tertiary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.card dt {
+    text-align: right;
+}
+
+.card dd {
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    margin-top: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
