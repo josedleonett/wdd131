@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6, dt {
     font-family: var(--primary-font);
     font-weight: bold;
     font-style: normal;
+    font-weight: 500;
 }
 
 p, a, figcaption, dd {
@@ -30,6 +31,7 @@ p, a, figcaption, dd {
     font-size: medium;
     font-weight: normal;
     font-style: normal;
+    font-weight: 500;
 }
 
 body {
