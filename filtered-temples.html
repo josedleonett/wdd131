@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Photo Gallery</title>
+    <meta
+      name="description"
+      content="This page contains a photo gallery of temples of Church of Jesus Christ of Later-Days Saints.">
+    <meta name="author" content="Jose D. Leonett">
+    <link rel="stylesheet" href="styles/filtered-temples.css" >
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+          <h1 id="headerTitle">Temple Album</h1>
+          <a id="menuButton">☰</a>
+      </div>
+      <nav id="menuNavigation" class="hidden">
+        <ul>
+          <li><a id="filter-home-anchor" href="#">Home</a></li>
+          <li><a id="filter-old-temples-anchor" href="#">Old</a></li>
+          <li><a id="filter-new-temples-anchor" href="#">New</a></li>
+          <li><a id="filter-large-temples-anchor" href="#">Large</a></li>
+          <li><a id="filter-small-temples-anchor" href="#">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="pageTitle">Home</h2>
+      <div id="templeGalleryContainer" class="templeGallery"></div>
+    </main>
+    <footer>
+        <p>
+          &copy;<span id="currentyear"></span> Jose Daniel Leonett |
+          Venezuela-Argentina
+        </p>
+        <p class="accentText">
+          Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+  </body>
+</html>

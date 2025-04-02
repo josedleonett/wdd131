@@ -1,0 +1,224 @@
+:root {
+    --primary-color: #254d77;
+    --secondary-color: #ffb676;
+    --tertiary-color: #333;
+    --text-color-dark: #333;
+    --text-color-light: #f4f4f4;
+    --background-color: #f4f4f4;
+    --border-color: #ccc;
+    --border-radius: 10px;
+    --transition: 0.3s;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --primary-font: "Kanit", sans-serif;
+    --secondary-font: "Outfit", sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-style: normal;
+}
+
+p,
+a,
+figcaption,
+dl,
+dt,
+dd,
+li {
+    font-family: var(--secondary-font);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--background-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile first styles */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 1rem;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#menuButton {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--text-color-light);
+    margin-right: 1rem;
+}
+
+#menuButton:hover {
+    background-color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+#headerTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#menuNavigation {
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 0.5rem 0;
+    transition: var(--transition);
+}
+
+#menuNavigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menuNavigation ul li a {
+    padding: 0.75rem 0;
+    display: block;
+    color: var(--text-color-light);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+}
+
+#menuNavigation ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark);
+    transition: var(--transition);
+}
+
+.hidden {
+    display: none;
+}
+
+
+main {
+    padding: 2rem 1rem;
+    flex: 1;
+    text-align: center;
+}
+
+#pageTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.templeGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.templeGalleryCard {
+    background-color: var(--text-color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.templeGalleryCard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: var(--transition);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    background-color: var(--border-color);
+    background: linear-gradient(135deg, var(--background-color), var(--border-color));
+}
+
+.templeGalleryCard img[src] {
+    opacity: 1;
+    background: none;
+}
+
+.templeGalleryCard:hover img {
+    transform: scale(1.05);
+}
+
+.templeGalleryCard figcaption {
+    line-height: 1.5;
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.templeGalleryCard figcaption h3 {
+    font-family: var(--secondary-font);
+    font-weight: normal;
+    font-size: x-large;
+}
+
+.templeGalleryCard figcaption dl {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.templeGalleryCard figcaption dl dt {
+    display: inline;
+    font-weight: bold;
+}
+
+.templeGalleryCard figcaption dl dd {
+    display: inline;
+    font-style: italic;
+    margin: 0;
+}
+
+.templeGalleryCard figcaption dl dd::after {
+    content: "";
+    display: block;
+}
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
