@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #254d77;
+    --secondary-color: #ffb676;
+    --tertiary-color: #333;
+    --accent-color: #f48f37;
+    --text-color-dark: #333;
+    --text-color-light: #f8f6f6;
+    --background-color: #f4f4f4;
+    --background-color-light: #f9f9f9;
+    --border-color: #ccc;
+    --border-radius: 10px;
+    --transition: 0.3s;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --primary-font: "Kanit", sans-serif;
+    --secondary-font: "Outfit", sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-style: normal;
+}
+
+p,
+a,
+figcaption,
+dl,
+dt,
+dd,
+li,
+legend,
+label {
+    font-family: var(--secondary-font);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--background-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile first styles */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--text-color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    margin: 1rem 0;
+    animation: fadeIn 0.5s ease-in-out;
+    min-width: 100%;
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.card.widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--text-color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    animation: fadeIn var(--transition) ease-in-out;
+    text-align: center;
+}
+
+.card.widget h2 {
+    font-size: 1.8rem;
+    color: var(--text-color-light);
+}
+
+.card.widget p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card.widget span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+#overallRating {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+dd {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}

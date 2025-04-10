@@ -1,0 +1,6 @@
+/* Large screens styles */
+@media screen and (min-width: 629px) {
+    .card {
+        min-width: 600px;
+    }
+}

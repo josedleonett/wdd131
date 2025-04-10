@@ -1,0 +1,262 @@
+:root {
+    --primary-color: #254d77;
+    --secondary-color: #ffb676;
+    --tertiary-color: #333;
+    --accent-color: #f48f37;
+    --text-color-dark: #333;
+    --text-color-light: #f8f6f6;
+    --background-color: #f4f4f4;
+    --background-color-light: #f9f9f9;
+    --border-color: #ccc;
+    --border-radius: 10px;
+    --transition: 0.3s;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --primary-font: "Kanit", sans-serif;
+    --secondary-font: "Outfit", sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-style: normal;
+}
+
+p,
+a,
+figcaption,
+dl,
+dt,
+dd,
+li,
+legend,
+label {
+    font-family: var(--secondary-font);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--background-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile first styles */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    max-width: 600px;
+
+}
+
+.card {
+    background-color: var(--text-color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    margin: 1rem 0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+form fieldset {
+    border: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+form fieldset:nth-of-type(1) {
+    margin-top: 0;
+}
+
+form fieldset legend {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+form legend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height:normal;
+    margin-bottom: 10px;
+}
+
+form i {
+    font-size: small;
+}
+
+form fieldset label {
+    display: none;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--text-color-dark);
+}
+
+form fieldset input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    background-color: var(--background-color-light);
+    transition: var(--transition);
+}
+
+form .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form .checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    gap: 0.5rem;
+}
+
+form .checkbox-group label:hover {
+    cursor: pointer;
+}
+
+
+form .checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+form fieldset .star-rating label {
+    display: flex;
+    justify-content: center;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    position: relative;
+}
+
+.star-rating input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.star-rating>label {
+    height: fit-content;
+    font-size: 40px;
+    transition: 0.2s ease;
+    color: orange;
+}
+
+.star-rating>label:hover {
+    cursor: pointer;
+}
+
+.star-rating label:hover {
+    content: '\2605';
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.star-rating label:active::before {
+    transform: scale(1.1);
+}
+
+.star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+
+.star-rating input:checked~label:before {
+    content: '\2605';
+}
+
+@-moz-document url-prefix() {
+    .star-rating input:checked~label:before {
+        font-size: 36px;
+        line-height: 21px;
+    }
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+form button:hover {
+    background-color: var(--accent-color);
+    box-shadow: var(--box-shadow);
+}
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

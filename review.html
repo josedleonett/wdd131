@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Review | WDD131 | Jose Leonett</title>
+        <link rel="stylesheet" href="styles/review.css">
+        <link rel="stylesheet" href="styles/review_large.css">
+
+        <meta name="author" content="Jose D. Leonett">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet">
+
+        <script src="scripts/review.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <div class="card widget">
+                <p>Total Reviews Done: <span id="totalReviews">0</span></p>
+            </div>
+            <div class="card">
+                <h2>Thank you for your review!</h2>
+                <dl>
+                    <dt>Product Name:</dt>
+                    <dd><span id="productName"></span></dd>
+                    <dt>Overall Rating:</dt>
+                    <dd><span id="overallRating"></span></dd>
+                    <dt>Date of Installation:</dt>
+                    <dd><span id="dateOfInstallation"></span></dd>
+                    <dt>Useful Features:</dt>
+                    <dd><span id="usefulFeatures"></span></dd>
+                    <dt>Your Review:</dt>
+                    <dd><span id="writtenReview"></span></dd>
+                    <dt>Your Name:</dt>
+                    <dd><span id="yourName"></span></dd>
+                </dl>
+            </div>
+        </main>
+        <footer>
+            <p>
+                &copy;<span id="currentyear"></span> Jose Daniel Leonett |
+                Venezuela-Argentina
+            </p>
+            <p class="accentText">
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </footer>
+    </body>
+
+</html>
