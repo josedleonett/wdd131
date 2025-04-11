@@ -30,7 +30,7 @@
       <fieldset>
         <legend>Product Name</legend>
         <label for="productName">Product Name</label>
-        <select name="productName" id="productName" required>
+        <select name="productName" id="productName" aria-label="Product Name" required>
           <option value="" disabled selected>Choose a Product...</option>
         </select>
       </fieldset>
@@ -38,49 +38,49 @@
       <fieldset>
         <legend>Overall Rating</legend>
         <div class="star-rating">
-          <input type="radio" name="stars" id="star-5" value="5" required>
-          <label for="star-5" aria-label="5 estrellas">★</label>
+          <input type="radio" name="stars" id="star-5" value="5" aria-label="3 stars" required>
+          <label for="star-5" aria-label="5 stars">☆</label>
 
-          <input type="radio" name="stars" id="star-4" value="4" required>
-          <label for="star-4" aria-label="4 estrellas">★</label>
+          <input type="radio" name="stars" id="star-4" value="4" aria-label="3 stars" required>
+          <label for="star-4" aria-label="4 stars">☆</label>
 
-          <input type="radio" name="stars" id="star-3" value="3" required>
-          <label for="star-3" aria-label="3 estrellas">★</label>
+          <input type="radio" name="stars" id="star-3" value="3" aria-label="3 stars" required>
+          <label for="star-3" aria-label="3 stars">☆</label>
 
-          <input type="radio" name="stars" id="star-2" value="2" required>
-          <label for="star-2" aria-label="2 estrellas">★</label>
+          <input type="radio" name="stars" id="star-2" value="2" aria-label="3 stars" required>
+          <label for="star-2" aria-label="2 stars">☆</label>
 
-          <input type="radio" name="stars" id="star-1" value="1" required>
-          <label for="star-1" aria-label="1 estrella">★</label>
+          <input type="radio" name="stars" id="star-1" value="1" aria-label="3 stars" required>
+          <label for="star-1" aria-label="1 star">☆</label>
         </div>
       </fieldset>
 
       <fieldset>
         <legend>Date of Installation</legend>
         <label for="date">Date of Installation</label>
-        <input type="date" name="date" id="date" required>
+        <input type="date" name="date" id="date" aria-label="Date of Installation" required>
       </fieldset>
 
       <fieldset class="checkbox-group">
         <legend>Which features did you find useful? <i>(Check all that apply)</i></legend>
 
         <label for="durability">
-          <input type="checkbox" name="features" id="durability" value="durability">
+          <input type="checkbox" name="features" id="durability" value="durability" aria-label="Durability">
           Durability
         </label>
 
         <label for="ease-of-use">
-          <input type="checkbox" name="features" id="ease-of-use" value="ease-of-use">
+          <input type="checkbox" name="features" id="ease-of-use" value="ease-of-use" aria-label="Ease of Use">
           Ease of Use
         </label>
 
         <label for="performance">
-          <input type="checkbox" name="features" id="performance" value="performance">
+          <input type="checkbox" name="features" id="performance" value="performance" aria-label="Performance">
           Performance
         </label>
 
         <label for="design">
-          <input type="checkbox" name="features" id="design" value="design">
+          <input type="checkbox" name="features" id="design" value="design" aria-label="Design">
           Design
         </label>
       </fieldset>
@@ -88,13 +88,13 @@
       <fieldset>
         <legend>Written Review <i>(Optional)</i></legend>
         <label for="review">Written Review</label>
-        <textarea name="review" id="review" rows="5" cols="30"></textarea>
+        <textarea name="review" id="review" rows="5" cols="30" aria-label="Written Review"></textarea>
       </fieldset>
 
       <fieldset>
         <legend>Your Name <i>(Optional)</i></legend>
         <label for="name">Your Name</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" aria-label="Your Name">
       </fieldset>
 
       <button type="submit">Post Review</button>

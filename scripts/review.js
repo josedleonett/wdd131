@@ -52,12 +52,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("productName");
 const overallRating = urlParams.get("stars");
 const dateOfInstallation = urlParams.get("date");
-const usefulFeatures = [
-  urlParams.get("durability"),
-  urlParams.get("ease-of-use"),
-  urlParams.get("perfomance"),
-  urlParams.get("design"),
-].filter(Boolean).join(", ");
+const usefulFeatures = urlParams.getAll("features").join(", ") || "No features selected.";
 const writtenReview = urlParams.get("review") || "No review provided.";
 const yourName = urlParams.get("name") || "Anonymous";
 

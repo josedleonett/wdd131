@@ -199,16 +199,17 @@ form fieldset .star-rating label {
     height: fit-content;
     font-size: 40px;
     transition: 0.2s ease;
-    color: orange;
+    font-weight: 500;
+    color: var(--accent-color);
 }
 
 .star-rating>label:hover {
     cursor: pointer;
+    font-weight: bolder;
 }
 
 .star-rating label:hover {
     content: '\2605';
-    font-weight: bold;
     transition: 0.2s ease;
 }
 
@@ -219,8 +220,8 @@ form fieldset .star-rating label {
 .star-rating label::before {
     content: '\2606';
     position: absolute;
-    top: 0px;
-    line-height: 26px;
+    /* top: 0px;
+    line-height: 26px; */
 }
 
 .star-rating input:checked~label:before {
