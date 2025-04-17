@@ -1,0 +1,157 @@
+@keyframes highlightNew {
+    0% { transform: scale(1); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    50% { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 30px var(--accent-color); }
+    100% { transform: scale(1); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    background-size: 200% 200%;
+}
+
+.favorites-section {
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.favorites-category .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.no-favorites-message {
+    padding: 4rem 1rem;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.no-favorites-message .card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.no-favorites-icon {
+    font-size: 4rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+.no-favorites-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.highlight-favorite {
+    animation: highlightNew 1s ease-in-out;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-game, .card-character, .card-console {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    margin: 1rem auto;
+}
+
+.card-game:hover, .card-character:hover, .card-console:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-game-image-container, .card-character-image-container, .card-console-image-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+.card-game .card-image, .card-character .card-image, .card-console .card-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.card-game:hover .card-image, .card-character:hover .card-image, .card-console:hover .card-image {
+    transform: scale(1.1);
+}
+
+.card-game-content, .card-character-content, .card-console-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-game .card-title, .card-character .card-title, .card-console .card-title {
+    font-size: 1.8rem;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card-game .card-description, .card-character .card-description, .card-console .card-description {
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+    color: var(--text-color-dark);
+    margin-bottom: 1rem;
+}
+
+.card-game .card-details-container, .card-character .card-details-container, .card-console .card-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.card-game .card-details, .card-character .card-details, .card-console .card-details {
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .favorites-category .section-title {
+        font-size: 2.2rem;
+        text-align: center;
+        display: block;
+    }
+    
+    .no-favorites-actions {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .no-favorites-actions .cta-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

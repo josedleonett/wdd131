@@ -91,7 +91,6 @@
 
 .card-details {
     padding: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.02);
     border-radius: 4px;
     font-size: 0.95rem;
     line-height: 1.5;
@@ -99,10 +98,10 @@
 }
 
 .card-details strong {
-    color: var(--secondary-color);
+    color: var(--text-color-dark);
     display: block;
     margin-bottom: 3px;
-    font-size: 0.85rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }

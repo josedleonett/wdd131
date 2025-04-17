@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites | +1up</title>
+    <meta name="description" content="Access all your favorite retro games, characters, and consoles in one place.">
+    <meta name="author" content="Jose D. Leonett">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/favorites.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Jersey+15&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/assets/favicon.ico" type="image/x-icon">
+    
+    <script type="module" src="scripts/components.js" defer></script>
+    <script type="module" src="scripts/favorites.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- The content will be injected by components.js -->
+    </header>
+
+    <main id="main-content">
+        <section class="hero-banner" id="section-favorites">
+            <h1 class="hero-title">My Favorites</h1>
+            <p class="hero-description">Access all your favorite games, characters and consoles in one place.</p>
+        </section>
+        
+        <section id="favorites-container" class="favorites-section">
+            <div id="games-favorites" class="favorites-category">
+                <h2 class="section-title">Favorite Games</h2>
+                <div class="gallery-grid">
+                    <!-- Game cards will be inserted here -->
+                </div>
+            </div>
+            
+            <div id="characters-favorites" class="favorites-category">
+                <h2 class="section-title">Favorite Characters</h2>
+                <div class="gallery-grid">
+                    <!-- Character cards will be inserted here -->
+                </div>
+            </div>
+            
+            <div id="consoles-favorites" class="favorites-category">
+                <h2 class="section-title">Favorite Consoles</h2>
+                <div class="gallery-grid">
+                    <!-- Console cards will be inserted here -->
+                </div>
+            </div>
+            
+            <div id="no-favorites" class="no-favorites-message">
+                <div class="card">
+                    <i class="fas fa-star-half-alt no-favorites-icon"></i>
+                    <h2 class="section-title">No Favorites Yet!</h2>
+                    <p class="section-description">You haven't added any favorites yet. Explore our games, characters, and consoles and click the star icon to add them to your favorites.</p>
+                    <div class="no-favorites-actions">
+                        <a href="games-gallery.html" class="cta-button">Explore Games</a>
+                        <a href="index.html" class="cta-button">View Characters</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- The content will be injected by components.js -->
+    </footer>
+</body>
+</html>
