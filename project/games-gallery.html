@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games Gallery | +1up</title>
+        <meta name="description" content="Explore our collection of iconic retro video games.">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/games-gallery.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Jersey+15&display=swap" rel="stylesheet">
+        <script type="module" src="scripts/games-gallery.js" defer></script>
+        <link rel="icon" href="images/assets/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-logo">
+                <img src="images/assets/1up-logo.png" alt="+1up Logo" class="logo-image" loading="lazy">
+            </div>
+            <nav class="header-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="games-gallery.html" class="nav-link">Games Gallery</a></li>
+                    <li class="nav-item"><a href="#section-consoles" class="nav-link">Console Gallery</a></li>
+                    <li class="nav-item"><a href="#section-reviews" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section class="hero-banner" id="section-games-gallery">
+                <h1 class="hero-title">Games Gallery</h1>
+                <p class="hero-description">Explore legendary titles that defined an era and shaped the gaming world.
+                </p>
+                <a href="#games-grid" class="cta-button">Browse Games</a>
+            </section>
+
+            <section class="section-game-gallery" id="games-grid">
+                <h2 class="section-title">Classic Video Games</h2>
+                <p class="section-description">Discover the most influential retro games of all time.</p>
+                <div class="gallery-grid">
+                    <!-- Game cards will be dynamically inserted here -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <ul class="social-links" aria-label="Social Media Links">
+                    <li class="social-item">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <nav class="footer-nav" aria-label="Footer Navigation">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item"><a href="index.html">Home</a></li>
+                        <li class="footer-nav-item"><a href="#section-characters">Character Gallery</a></li>
+                        <li class="footer-nav-item"><a href="#section-consoles">Console Gallery</a></li>
+                        <li class="footer-nav-item"><a href="#section-reviews">Reviews</a></li>
+                        <li class="footer-nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-credits">
+                <p>&copy; 2025 +1up. All rights reserved.</p>
+                <p>Designed by Jose D. Leonett</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

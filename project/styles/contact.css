@@ -1,0 +1,84 @@
+.hero-banner {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    background-size: 200% 200%;
+}
+
+.contact-form-section {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.contact-form-section .card {
+    padding: 2rem;
+    background-color: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 600px;
+}
+
+form {
+    box-shadow: none;
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+form legend {
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--text-color-dark);
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    background-color: var(--background-color-light);
+    transition: var(--transition);
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition), transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
