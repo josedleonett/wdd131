@@ -3,6 +3,11 @@
     background-size: 200% 200%;
 }
 
+.hero-title, .hero-description {
+    color: var(--text-color-dark);
+    text-shadow: 0 1px 4px rgba(255, 255, 255, 0.776);
+}
+
 .contact-form-section {
     margin-top: 2rem;
     display: flex;
