@@ -57,7 +57,7 @@ function createHeader() {
         <ul class="nav-list">
             <li class="nav-item"><a href="index.html" class="nav-link ${currentPage === 'index.html' ? 'active' : ''}">Home</a></li>
             <li class="nav-item"><a href="games-gallery.html" class="nav-link ${currentPage === 'games-gallery.html' ? 'active' : ''}">Games Gallery</a></li>
-            <li class="nav-item"><a href="#section-consoles" class="nav-link">Console Gallery</a></li>
+            <li class="nav-item"><a href="index.html#section-consoles" class="nav-link">Console Gallery</a></li>
             <li class="nav-item"><a href="favorites.html" class="nav-link ${currentPage === 'favorites.html' ? 'active' : ''}">Favorites</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link ${currentPage === 'contact.html' ? 'active' : ''}">Contact</a></li>
         </ul>
@@ -89,7 +89,7 @@ function createFooter() {
             <ul class="footer-nav-list">
                 <li class="footer-nav-item"><a href="index.html">Home</a></li>
                 <li class="footer-nav-item"><a href="games-gallery.html">Games Gallery</a></li>
-                <li class="footer-nav-item"><a href="#section-consoles">Console Gallery</a></li>
+                <li class="footer-nav-item"><a href="index.html#section-consoles">Console Gallery</a></li>
                 <li class="footer-nav-item"><a href="favorites.html">Favorites</a></li>
                 <li class="footer-nav-item"><a href="contact.html">Contact</a></li>
             </ul>
