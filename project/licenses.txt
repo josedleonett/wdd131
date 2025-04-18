@@ -1,2 +1,5 @@
-+1up logo:
-<a href="https://www.flaticon.com/free-icons/1up" title="1up icons">1up icons created by Freepik - Flaticon</a>
+1up Logo License:  
+This logo is licensed under the Freepik Flaticon license.  
+Attribution:  
+"1up icons created by Freepik - Flaticon"  
+Link: <a href="https://www.flaticon.com/free-icons/1up" title="1up icons">https://www.flaticon.com/free-icons/1up</a>

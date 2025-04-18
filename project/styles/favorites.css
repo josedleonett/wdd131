@@ -154,4 +154,25 @@
         width: 100%;
         max-width: 300px;
     }
+
+    .favorites-category .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0px;
+    }
+
+    .card-game, .card-character, .card-console {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .favorites-category .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-game .card-title, .card-character .card-title, .card-console .card-title {
+        font-size: 1.2rem;
+    }
 }

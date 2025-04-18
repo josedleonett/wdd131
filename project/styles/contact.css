@@ -87,3 +87,26 @@ form button:hover {
     background-color: var(--accent-color);
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .contact-form-section .card {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    form legend {
+        font-size: 1.5rem;
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}

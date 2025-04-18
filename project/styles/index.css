@@ -111,3 +111,26 @@
     font-size: 1rem;
     color: var(--text-color-dark);
 }
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 2rem 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+}
