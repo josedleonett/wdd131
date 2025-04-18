@@ -13,13 +13,12 @@ function createCard({ title, image, description, ...rest }) {
         </button>
     `;
     
-    // Determine card class
     const cardClass = isGame ? 'card-game' : (isCharacter ? 'card-character' : 'card-console');
     
     return `
         <div class="card ${cardClass}">
             <div class="${cardClass}-image-container">
-                <img src="${image}" alt="${title}" class="card-image" loading="lazy">
+                <img src="${image.replace('.png', '.webp')}" alt="${title}" class="card-image" loading="lazy">
             </div>
             <div class="${cardClass}-content">
                 <h3 class="card-title">${title}</h3>
@@ -51,7 +50,7 @@ function createHeader() {
     
     return `
     <div class="header-logo">
-        <img src="images/assets/1up-logo.png" alt="+1up Logo" class="logo-image" loading="lazy">
+        <img src="images/assets/1up-logo.webp" alt="+1up Logo" class="logo-image" loading="lazy">
     </div>
     <nav class="header-nav" aria-label="Main Navigation">
         <ul class="nav-list">
