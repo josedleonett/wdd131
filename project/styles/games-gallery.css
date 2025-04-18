@@ -3,6 +3,15 @@
     background-size: 200% 200%;
 }
 
+.hero-title {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    margin: 1rem 0;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    color: var(--text-color-light);
+}
+
 .section-game-gallery {
     padding: 3rem 1.5rem;
     text-align: center;

@@ -50,7 +50,7 @@ function createHeader() {
     
     return `
     <div class="header-logo">
-        <img src="images/assets/1up-logo.webp" alt="+1up Logo" class="logo-image" loading="lazy">
+        <img src="images/assets/1up-logo.webp" alt="+1up Logo" class="logo-image" loading="lazy" width="100" height="57">
     </div>
     <nav class="header-nav" aria-label="Main Navigation">
         <ul class="nav-list">

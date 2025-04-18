@@ -16,6 +16,18 @@
     --secondary-font: "Alata", sans-serif;
 }
 
+@font-face {
+    font-family: 'Jersey 15';
+    src: url('https://fonts.gstatic.com/s/jersey15/v3/_6_9EDzuR.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alata';
+    src: url('https://fonts.gstatic.com/s/alata/v11/PbytFmztEwbI.woff2') format('woff2');
+    font-display: swap;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -405,7 +417,7 @@ form button:hover {
 }
 
 .hero-title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 500;
     font-family: var(--primary-font);
     margin: 1rem 0;
